@@ -14,7 +14,14 @@ result:
 ```
 Swappiness can be changed in fly with:
 ```bash  
-sysctl vm.swappiness=10
+sudo sysctl vm.swappiness=10
+```
+resulting:
+```bash
+cat /proc/sys/vm/swappiness
+```
+```bash
+10
 ```
 Swap can be emptied with disabling swap:  
 ```bash
