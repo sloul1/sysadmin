@@ -4,6 +4,10 @@
 
 This is a brief guide for setting up openssh-server on Ubuntu Linux.
 
+More information on subject.  
+[Ubuntu OpenSSH server documentation](https://documentation.ubuntu.com/server/how-to/security/openssh-server/)  
+[OpenSSH project](https://www.openssh.com/)
+
 ## Enabling openssh-service
 
 1. Update system 
@@ -29,7 +33,7 @@ TriggeredBy: ● ssh.socket
 ```
 4. Start ssh.service and enable it to start when system boots up
 ```bash
-sudo systemctl enable ssh.service
+sudo systemctl start ssh.service
 ```
 ```bash
 sudo systemctl enable ssh.service 
@@ -57,3 +61,5 @@ Jan 03 13:21:27 peppertp15ubu-ThinkPad-E15-Gen-3 systemd[1]: Starting ssh.servic
 Jan 03 13:21:27 peppertp15ubu-ThinkPad-E15-Gen-3 sshd[52851]: Server listening on :: port 22.
 Jan 03 13:21:27 peppertp15ubu-ThinkPad-E15-Gen-3 systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
 ```
+> [!TIP]  
+> Press 'q' or Ctrl + c to exit status window.
