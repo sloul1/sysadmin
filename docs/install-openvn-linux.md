@@ -6,13 +6,13 @@ Tested on native `Ubuntu desktop 24.04.1 LTS (Noble Numbat)`
 
 ## Table of Contents
 
-1. [Check if openvpn is alredy installed](#Installed?)
-2. [Check installation candidates](#Candidates?)
+1. [Check if openvpn is alredy installed](#Installed)
+2. [Check installation candidates](#Candidates)
 3. [Install openvpn](#Install)
 4. [Created according to openvpn community documentation](#Documentation)
 
 
-## Installed?
+## Installed
 
 ```bash
 which openvpn
@@ -42,7 +42,7 @@ DCO version: N/A
 Originally developed by James Yonan
 Copyright (C) 2002-2024 OpenVPN Inc <sales@openvpn.net>
 ```
-## Candidates?
+## Candidates
 ```bash
 sudo apt-cache policy openvpn
 ```
