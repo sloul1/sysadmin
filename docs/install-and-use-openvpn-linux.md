@@ -15,7 +15,7 @@ Tested on native `Ubuntu desktop 24.04.1 LTS (Noble Numbat)`
 
 
 ## Installed
-
+Check if openvpn is already installed.
 ```bash
 which openvpn
 ```
@@ -45,6 +45,7 @@ Originally developed by James Yonan
 Copyright (C) 2002-2024 OpenVPN Inc <sales@openvpn.net>
 ```
 ## Candidates
+Check installation candidates with `apt-cache` command:
 ```bash
 sudo apt-cache policy openvpn
 ```
@@ -63,7 +64,7 @@ openvpn:
         500 http://fi.archive.ubuntu.com/ubuntu noble/main amd64 Packages
 ```
 ## Install
-
+Refresh local software package index and install openvpn. Option `-y` installs without user interaction.
 ```bash
 sudo apt update && sudo apt install openvpn -y
 ```
@@ -113,11 +114,11 @@ Enter Private Key Password: •••••••
 2025-01-18 17:57:09 Initialization Sequence Completed
 ```
 ## Testing
-Open another terminal `ctrl + alt +t` for testing the connection with `ping`  
+Open another terminal `ctrl + alt +t` for testing the connection with `ping` command.  
+
 `$ ping ***.***.***.*`
 > [!NOTE]  
-> Note that pinged address in this example is private range in local area network.  
-This is just for demonstration purposes.  
+> Note that pinged address in this example is private range in local area network. This is just for demonstration purposes.  
 
 Issuing command `ping` with `-c` and integer `5` defines `count`of pings. 
 ```bash
@@ -138,7 +139,7 @@ rtt min/avg/max/mdev = 1.403/2.965/5.371/1.303 ms
 
 ```
 ## Disconnect
-To disconnect openvpn press `ctrl + c`.
+To disconnect openvpn press `ctrl + c` in terminal you typed `sudo openvpn --config yourfile.ovpn` command.
 
 ## Documentation  
 https://community.openvpn.net/openvpn/wiki/OpenVPN3Linux
