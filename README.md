@@ -8,4 +8,4 @@ This is a collection of articles regarding essentials in system administration.
 
 [setting up openssh-server](docs/ssh-server-setup.md)
 
-[install openvpn linux](docs/install-openvn-linux.md)
+[install and use openvpn linux](docs/install-and-use-openvpn-linux.md)
